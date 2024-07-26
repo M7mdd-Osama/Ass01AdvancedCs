@@ -23,7 +23,14 @@ namespace Demo
             //Console.WriteLine($"{point}  \n {point2}"); 
             #endregion
 
+            //Employee employee01 = new Employee() { Id = 30, Name = "Mohamed", Salary = 4000 };
+            //Employee employee02 = new Employee() { Id = 20, Name = "Ahmed", Salary = 5000 };
 
+            //if (employee01 == employee02)
+
+            //    Console.WriteLine("Yes");
+            //else
+            //    Console.WriteLine("not");
         }
     }
 }
