@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demo.Generics
 {
-    public class Point
+    public class Point : IComparable<Point>
     {
         public int X { get; set; }
         public int Y { get; set; }
@@ -20,5 +20,9 @@ namespace Demo.Generics
             return $"{X} , {Y}";
         }
 
+        public int CompareTo(Point? other)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

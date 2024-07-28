@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Demo
 {
-    internal class Helper /*<T>*/
+    internal class Helper<T> where T : Employee, IComparable
     {
         #region non Generics
         //public static void SWAP(ref int X, ref int Y)
@@ -29,12 +29,13 @@ namespace Demo
         //    Y = Temp;
         //} 
         #endregion
-        public static void SWAP<T>(ref T X, ref T Y)
+        public static void SWAP(ref T X, ref T Y)
         {
             T Temp = X;
             X = Y;
             Y = Temp;
         }
+
 
     }
 }
